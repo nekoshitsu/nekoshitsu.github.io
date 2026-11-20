@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>プライバシーポリシー｜nekoshitsu-comments</title><link rel="stylesheet" href="style.css"><link rel="icon" href="icon.png"></head>
+<body><main>
+<h1>プライバシーポリシー</h1>
+<p class="muted">アプリ名：nekoshitsu-comments　対象チャンネル：ねこ質チャンネル（おっさん教育ラジオ）　連絡先：neko.shitsu@gmail.com　制定日：2026年11月21日</p>
+
+<h2>1. 本アプリがすること</h2>
+<p>本アプリは、運営する YouTube チャンネル（ねこ質チャンネル）に投稿されたコメントの対応と、番組制作の改善を目的としています。</p>
+<ul>
+<li>コメントとその返信の一覧を取得する</li>
+<li>運営者の承認を得た文面で、コメントに返信する</li>
+<li>不適切なコメントを保留・非表示・スパム報告する（モデレーション）</li>
+<li>チャンネルの分析データ（視聴維持率や動画ごとの統計など）を読み取り専用で取得し、番組制作の改善に役立てる</li>
+</ul>
+<p>本アプリは、動画のアップロード・編集・削除を行いません。書き込みを行うのはコメントへの返信とモデレーションのみで、分析データの取得は読み取り専用です。</p>
+
+<h2>2. 利用する Google のサービスと権限</h2>
+<ul>
+<li>YouTube Data API v3 と YouTube Analytics API を使用します。</li>
+<li>要求する権限（スコープ）は https://www.googleapis.com/auth/youtube.force-ssl 、 https://www.googleapis.com/auth/youtube.readonly 、 https://www.googleapis.com/auth/yt-analytics.readonly です。</li>
+<li>実際に呼び出すのは、コメントに関するエンドポイント（commentThreads.list、comments.list、comments.insert、comments.setModerationStatus、comments.markAsSpam）と、統計・分析の読み取り専用エンドポイント（videos.list、channels.list、Analytics レポート取得）のみです。</li>
+</ul>
+
+<h2>3. 取得する情報</h2>
+<ul>
+<li>コメントの本文、投稿者名・チャンネル ID、投稿日時</li>
+<li>返信の文面（運営者が承認したもののみ送信します）</li>
+<li>分析データ（視聴維持率、再生回数・高評価数・コメント数などの集計値）</li>
+<li>OAuth のアクセストークンおよびリフレッシュトークン（認証の維持に必要です）</li>
+</ul>
+<p>上記以外のアカウント情報（パスワード、連絡先、他の Google サービスのデータなど）は取得しません。</p>
+
+<h2>4. 情報の利用と保管</h2>
+<ul>
+<li>取得したコメントは、返信文案の作成とモデレーションの判断にのみ使います。分析データは番組制作の改善のための分析にのみ使います。</li>
+<li>第三者に販売・提供しません。広告配信や、第三者の分析サービスのために使うこともありません。</li>
+<li>トークンは運営者の管理する環境にのみ保管し、第三者と共有しません。</li>
+<li>返信は、運営者が文面を確認・承認したものだけを送信します。</li>
+</ul>
+
+<h2>5. 情報の削除と権限の取り消し</h2>
+<ul>
+<li>Google アカウントの「サードパーティによるアクセス」設定から本アプリのアクセスを取り消すと、以降のアクセスはできなくなります。</li>
+<li>取り消しの申し出があれば、保管しているトークンを削除します。</li>
+</ul>
+
+<h2>6. お問い合わせ</h2>
+<p>本ポリシーや本アプリの利用に関するお問い合わせは、neko.shitsu@gmail.com までお願いします。</p>
+
+<nav><a href="index.html">ホーム / Home</a><a href="terms.html">利用規約 / Terms of Service</a></nav>
+</main></body></html>
